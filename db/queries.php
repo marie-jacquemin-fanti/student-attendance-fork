@@ -1,4 +1,5 @@
 <?php
+
 include 'connexion.php';
 
 function getAllStudents(): ?array
@@ -11,6 +12,7 @@ function getAllStudents(): ?array
     } catch (PDOException $e) {
         echo $e->getMessage();
     }
+
     return null;
 }
 
@@ -19,15 +21,15 @@ function getAllStudentWhereFirstNameContainsA(): ?array
     try {
         global $pdo;
 
-        return $pdo->query("SELECT count(*)
-                                 FROM students")->fetch();
+        return $pdo->query('SELECT count(*)
+                                 FROM students')->fetch();
 
     } catch (PDOException $e) {
         echo $e->getMessage();
     }
+
     return null;
 }
-
 
 function getStudent()
 {

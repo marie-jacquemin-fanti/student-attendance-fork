@@ -1,13 +1,13 @@
 <?php
 
-include __DIR__ . '/../connexion.php';
+include __DIR__.'/../connexion.php';
 
 function run(): void
 {
     global $pdo;
 
     try {
-        $stm = <<<sql
+        $stm = <<<'sql'
 INSERT INTO school_years (name, starts_at, ends_at, is_current_year)
 VALUES ('2025-2026', '2025-09-15', '2026-06-30', TRUE);
 

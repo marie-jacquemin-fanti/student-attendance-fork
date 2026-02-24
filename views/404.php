@@ -5,7 +5,7 @@
 </main>
 
 
-<?php include VIEWS_DIR . '/partials/nav.php' ?>
+<?php include VIEWS_DIR.'/partials/nav.php' ?>
 
 
-<?php include VIEWS_DIR . '/partials/footer.php' ?>
+<?php include VIEWS_DIR.'/partials/footer.php' ?>

@@ -1,13 +1,13 @@
 <?php
 
-include __DIR__ . '/../connexion.php';
+include __DIR__.'/../connexion.php';
 
 function up(): void
 {
     global $pdo;
 
     try {
-        $stm = <<<sql
+        $stm = <<<'sql'
 CREATE TABLE school_years
 (
     id              BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,

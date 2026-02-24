@@ -1,13 +1,13 @@
 <?php
 
-include __DIR__ . '/../connexion.php';
+include __DIR__.'/../connexion.php';
 
 function down(): void
 {
     global $pdo;
 
     try {
-        $stm = <<<sql
+        $stm = <<<'sql'
 DROP TABLE IF EXISTS attendances;
 DROP TABLE IF EXISTS student_group;
 DROP TABLE IF EXISTS session_group;
