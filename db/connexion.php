@@ -1,11 +1,11 @@
 <?php
-
-$host = '127.0.0.1';
-$db_name = 'schema_name';
-$user = 'root';
-$pass = '';
-$charset = 'utf8mb4';
-$dsn = "mysql:host=$host;dbname=$db_name;charset=$charset";
+$connexion = $_ENV['db_connection'];
+$host = $_ENV['db_host'];
+$db_name = $_ENV['db_database'];
+$user = $_ENV['db_username'];
+$pass = $_ENV['db_password'];
+$charset = $_ENV['db_charset'];
+$dsn = "$connexion:host=$host;dbname=$db_name;charset=$charset";
 
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
